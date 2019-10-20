@@ -1,5 +1,5 @@
-# linode_commands
-Set up commands for linode
+# linode commands
+Set up commands for linode using ubuntu 18.04
 
 I have set up a few Linode servers, not using scripts, and had followed the set up from [Corey Schafer's Tutorials](https://www.youtube.com/watch?v=Sa_kQheCnds&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=13).
 
