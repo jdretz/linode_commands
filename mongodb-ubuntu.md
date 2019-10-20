@@ -14,8 +14,8 @@
 13. `> db.createUser({ user: "username", pwd: passwordPrompt(), roles: [{ role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]})`
 14. `>db.adminCommand( { shutdown: 1 } )`
 15. In other tab, (where mongo was running)`sudo nano /etc/mongod.conf `
-16. Uncomment the security config, and type `enabled` on line below. Match format to other config options
+16. Uncomment the security config, and type `authorization: enabled` on line below. Match format to other config options
 17. Still in that other tab `mongod --auth --port 27017`
 18. `exit` shell and restart shell `mongo --port 27017  --authenticationDatabase "admin" -u "myUserAdmin" -p`
 19. `>use [new database name]`
-20. These are example permissions form documentation. There are more, and multiple roles can be assigned. `> db.createUser({ user: "username", pwd: passwordPrompt(), roles: [{ role: "readWrite", db:"shopassistant"}]})`
+20. These are example permissions form documentation. There are more, and multiple roles can be assigned. `> db.createUser({ user: "username", pwd: passwordPrompt(), roles: [{ role: "readWrite", db:"dbName"}]})`
