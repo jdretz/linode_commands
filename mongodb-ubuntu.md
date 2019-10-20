@@ -19,3 +19,4 @@
 18. `exit` shell and restart shell `mongo --port 27017  --authenticationDatabase "admin" -u "myUserAdmin" -p`
 19. `>use [new database name]`
 20. These are example permissions form documentation. There are more, and multiple roles can be assigned. `> db.createUser({ user: "username", pwd: passwordPrompt(), roles: [{ role: "readWrite", db:"dbName"}]})`
+The database needs a document (I believe) in order to be saved, so make sure a holder document is inserted until connection with the app can be confirmed.
