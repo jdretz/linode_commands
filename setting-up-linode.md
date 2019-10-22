@@ -1,4 +1,4 @@
-# Setting Up a Linode
+# Setting Up Remote Server
 1.  Include SSH key when created ("Add Key")      # I have a couple on my desktop that I use 
 2.  `$ ssh [root]@[ipaddress]`                    # Sign in to remote server
 3.  `$ apt-get update && apt-get upgrade`         # Get server up-to-date
